@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  color: white;
+  background-image: url(BG.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav {
+  width: 90%;
+  max-width: 800px;
+  height: 10vh;
+  position: sticky;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 8px;
+  background: rgba(32, 6, 6, 0.445);
+}
+
+main nav h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 800px;
+  backdrop-filter: blur(30px);
+  margin: 2em auto;
+  border: 2px solid white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  background: rgba(32, 6, 6, 0.445);
+}
+
+.form-box form {
+  width: 100%;
+}
+
+.form-box form label {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 1em 0;
+  display: block;
+}
+
+.form-box form input,
+.form-box form textarea {
+  width: calc(100% - 2em);
+  margin: 0.5em 0;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5em;
+}
+
+.form-box form textarea {
+  height: 10em;
+  resize: vertical; /* Allow users to resize vertically */
+}
+
+.form-box input:focus, textarea:focus {
+  outline: none;
+}
+
+.form-box #submit,
+.form-box #downloadBtn {
+  width: calc(100% - 2em);
+  max-width: 200px;
+  height: 3em;
+  margin: 1em;
+  background: #270f09;
+  color: white;
+  font-weight: 400;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+
+.form-box #submit:hover, 
+.form-box #downloadBtn:hover {
+  background-color: #854C4F;
+}
+
+.form-box #cvOutput {
+  width: 100%;
+  max-width: 800px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: none; 
+  flex-direction: column;
+  color: #240e09;
+  padding: 2em;
+  line-height: 2em;
+  flex-wrap: wrap;
+  line-height: 3em;
+}
+#downloadBtn {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  main nav {
+    width: 100%;
+  }
+
+  .form-box {
+    width: 95%;
+    padding: 1em;
+  }
+
+  .form-box form input,
+  .form-box form textarea {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .form-box #submit,
+  .form-box #downloadBtn {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  main nav h1 {
+    font-size: 1.5em;
+  }
+
+  .form-box form textarea {
+    height: 8em;
+  }
+}

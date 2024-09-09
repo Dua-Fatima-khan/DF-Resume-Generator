@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DF/ Resume-Generator</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/png" style="mix-blend-mode: color-burn;"/>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h1>DF-RESUME-GENERATOR</h1>
+      </nav>
+      <section class="form-box">
+        <form id="cvForm">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" required />
+          <hr />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <hr />
+          <label for="contact">Contact Number:</label>
+          <input type="text" id="contact" required />
+          <hr />
+          <label for="education">Education:</label><br />
+          <textarea id="education" required></textarea>
+          <hr />
+          <label for="experience">Experience:</label><br />
+          <textarea id="experience" required></textarea>
+          <hr />
+          <label for="skills">Skills:</label><br />
+          <textarea id="skills" required></textarea>
+          <button id="submit" type="submit">Generate Resume</button>
+        </form>
+        <hr />
+        <div id="cvOutput" class="cv-preview"></div>
+        <hr />
+        <button id="downloadBtn">Download PDF</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
