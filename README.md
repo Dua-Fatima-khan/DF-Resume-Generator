@@ -17,7 +17,7 @@ You can try out the app live here: [DF Resume Generator](https://dua-fatima-khan
 - **HTML**: Structuring the webpage and creating the layout.
 - **CSS**: Styling the app with a clean, minimalistic design, ensuring responsiveness with Flexbox.
 - **JavaScript**: Adding interactivity, task management, and DOM manipulation.
-- **PDF Generation:** jsPDF (or any other PDF library you might be using)
+- **PDF Generation:** html2pdf
 
 
 ## Usage 🖥️
